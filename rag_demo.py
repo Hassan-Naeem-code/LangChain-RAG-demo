@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 from langchain.llms import OpenAI
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
@@ -6,8 +7,8 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.chains import RetrievalQA
 from langchain.document_loaders import TextLoader
 
-# Set your OpenAI API key
-os.environ["OPENAI_API_KEY"] = "YOUR_OPENAI_API_KEY"
+# Load environment variables from .env
+load_dotenv()
 
 # Load documents
 loader = TextLoader("sample_docs.txt")

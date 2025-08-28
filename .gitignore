@@ -1,0 +1,19 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env.*
+*.sqlite3
+*.db
+.vscode/
+.venv/
+.idea/
+.DS_Store
+*.log
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# OS generated files
+Thumbs.db
