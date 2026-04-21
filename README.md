@@ -64,7 +64,7 @@ Answer: LangChain is a framework for developing applications powered by language
 
 | Want to… | Change |
 |---|---|
-| Use a different LLM | `OpenAI(...)` → `ChatAnthropic(...)` or `ChatOpenAI(model="gpt-4o")` |
+| Use a different LLM | `OpenAI(...)` → `ChatOpenAI(model="gpt-4o")` or `ChatGoogleGenerativeAI(...)` |
 | Persist the vector store | `Chroma.from_documents(..., persist_directory="./chroma_db")` |
 | Load PDFs | `from langchain.document_loaders import PyPDFLoader` |
 | Use open embeddings | `HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")` |
